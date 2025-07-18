@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>User List</h2>
+  <ul class="user-list">
+    <li *ngFor="let user of users">{{ user }}</li>
+  </ul>
+  <div class="form-group">
+    <input
+      type="text"
+      [(ngModel)]="newUser"
+      placeholder="Enter new user"
+      class="user-input"
+    />
+    <button (click)="addUser()" [disabled]="!newUser.trim()">Add User</button>
+  </div>
+</div>
