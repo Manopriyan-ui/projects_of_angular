@@ -1,0 +1,13 @@
+<h2>Contact Us</h2>
+<form (submit)="onSubmit()">
+  <label>Name:</label>
+  <input [(ngModel)]="name" name="name" required />
+  
+  <label>Email:</label>
+  <input [(ngModel)]="email" name="email" required />
+  
+  <label>Message:</label>
+  <textarea [(ngModel)]="message" name="message" required></textarea>
+  
+  <button type="submit">Send</button>
+</form>
