@@ -1,0 +1,18 @@
+.add-user-container {
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 500;
+}
+
+button.btn-primary {
+  width: 100%;
+  padding: 10px;
+}

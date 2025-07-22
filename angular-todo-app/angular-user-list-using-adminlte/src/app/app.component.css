@@ -1,0 +1,47 @@
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: #f4f6f9; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+nav {
+  background-color: #343a40;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffc107;
+}
+
+nav a.active {
+  color: #ffc107;
+  font-weight: bold;
+  border-bottom: 2px solid #ffc107;
+}
+
+
+.main-container {
+  padding: 30px;
+}
+
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}

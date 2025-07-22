@@ -1,0 +1,22 @@
+.users-container {
+  padding: 30px;
+}
+
+.user-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.user-card h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.user-card p {
+  margin: 5px 0;
+  color: #555;
+}
