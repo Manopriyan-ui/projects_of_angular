@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="box box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">Currency Converter</h3>
+        </div>
+        <div class="box-body">
+          <form>
+            <div class="form-group">
+              <label>Amount</label>
+              <input type="number" class="form-control" [(ngModel)]="amount" name="amount" placeholder="Enter amount">
+            </div>
+            <div class="form-group">
+              <label>From Currency</label>
+              <select class="form-control" [(ngModel)]="fromCurrency" name="fromCurrency">
+                <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>To Currency</label>
+              <select class="form-control" [(ngModel)]="toCurrency" name="toCurrency">
+                <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-primary" [disabled]="loading" (click)="convertCurrency()">Convert</button>
+          </form>
+          <div class="alert alert-info" *ngIf="convertedAmount !== null && !error">
+            {{amount}} {{fromCurrency}} = {{convertedAmount | number:'1.2-2'}} {{toCurrency}}
+          </div>
+          <div class="alert alert-danger" *ngIf="error">
+            {{error}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
